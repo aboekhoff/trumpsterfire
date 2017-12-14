@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity, WebView } from 'react-native'
 import { List, ListItem } from 'react-native-elements'
-import { Spinner } from './components/Spinner'
 import { StackNavigator } from 'react-navigation'
 
 import { getTrumps } from './util/api'
