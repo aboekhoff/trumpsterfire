@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, WebView } from 'react-native'
+import { styles } from '../styles'
 
 export class PageScreen extends React.Component {
   render() {

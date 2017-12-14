@@ -1,6 +1,8 @@
 import React from 'react'
-import { List, ListItem, ScrollView, View } from 'react-native'
-import { getTrumps } from '../util/api'
+import { ScrollView, View } from 'react-native'
+import { List, ListItem } from 'react-native-elements'
+import { getTrumps } from '../api'
+import { styles } from '../styles'
 
 export class IndexScreen extends React.Component {
   static navigationOptions = {
@@ -16,8 +18,6 @@ export class IndexScreen extends React.Component {
 
   componentDidMount() {
     getTrumps().then(trumps => {
-      console.log('got trumps in component did mount')
-      console.log(trumps)
       this.setState({ trumps })
     })
   }
